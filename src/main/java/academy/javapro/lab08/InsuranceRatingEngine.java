@@ -159,11 +159,11 @@ public class InsuranceRatingEngine {
             return "luxury";
         }
         //If make is equal to "ferrari", "porsche", "mustang", or "corvette", return "sports"
-        else if(make.equals("ferrari") || make.equals("porsche") || make.equals("ford") && model.contains("mustang")  /*make.equals("mustang") */|| make.equals("corvette")){
+        else if(make.equals("ferrari") || make.equals("porsche") || model.contains("mustang")|| model.equals("corvette")){
             return "sports";
         }
         //If model is equal to "suv", "explorer", "tahoe", or "highlander", return "suv"
-        else if (make.equals("suv") || make.equals("explorer") || make.equals("tahoe") || make.equals("highlander")){
+        else if (model.equals("suv") || model.equals("explorer") || model.equals("tahoe") || model.equals("highlander")){
             return "suv";
         }
         //Otherwise, return "sedan"
